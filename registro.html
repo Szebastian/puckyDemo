@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro y registro</title>
+    <link rel="stylesheet" href="./css/styleR.css" />
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="index.html" autocomplete="off" class="sign-in-form">
+                        <div class="logo">
+                            <img src="./images/puckypet.png" alt="puckypet" />
+
+                        </div>
+
+                        <div class="heading">
+                            <h2>Bienvenido</h2>
+                            <h6>Todavía no estas registrado?</h6>
+                            <a href="#" class="toggle">registrarse</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Nombre</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Contraseña</label>
+                            </div>
+
+                            <input type="submit" value="Iniciar sesion" class="sign-btn" />
+
+                            <p class="text">
+                                ¿Olvidaste tu contraseña?
+                                <a href="#">Consigue ayuda</a> iniciando sesión
+                            </p>
+                        </div>
+                    </form>
+
+                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="./images/puckypet.png" alt="puckypet" />
+                        </div>
+
+                        <div class="heading">
+                            <h2>Empezar</h2>
+                            <h6>¿Ya tienes una cuenta?</h6>
+                            <a href="#" class="toggle">Iniciar sesión</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Nombre</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" class="input-field" autocomplete="off" required />
+                                <label>Correo</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Contraseña</label>
+                            </div>
+
+                            <input type="submit" value="Registrar" class="sign-btn" />
+
+                            <p class="text">
+                                Al registrarse, estoy de acuerdo con el
+                                <a href="#">Términos de servicios</a> y
+                                <a href="#">Política de privacidad</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="./images/perro02.jpg" class="image img-1 show" alt="" />
+                        <img src="./images/perro01.jpg" class="image img-2" alt="" />
+                        <img src="./images/perro02.jpg" class="image img-3" alt="" />
+                    </div>
+
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Ayuda a tu Mascota</h2>
+                                <h2>adopta</h2>
+                                <h2>Da un hogar</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>

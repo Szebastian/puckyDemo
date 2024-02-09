@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Puckypet Dashboard Propietario</title>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <span class="logo-img">
+                <img src="images/puckyLogoSinLetras.png" alt="logo sin letras">
+
+            </span>
+
+            <div class="text head-text">
+                <span class="name"><span></span>Pucky</span>
+                <span class="pet"><span>Pet</span></span>
+            </div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Resumen</a></li>
+            <li><a href="#"><i class='bx bxs-dog'></i>Mascotas</a></li>
+            <li><a href="#"><i class='bx bx-plus-medical'></i>Veterinaria</a></li>
+            <li><a href="#"><i class='bx bx-calendar'></i>Turno</a></li>
+            <li><a href="#"><i class='bx bx-shield-alt'></i>Denuncia</a></li>
+            <li><a href="#"><i class='bx bx-home-heart'></i>Adopcion</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="./registro.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Cerrar Sesión
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Buscar Veterinaria...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">10</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/migue.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Panel de Control</h1>
+                    <ul class="breadcrumb">
+
+                        <h2>Hola Miguel!</h2>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bxs-dog'></i>
+                    <span class="info">
+                        <h4>Mascota</h4>
+                        <h5>6/2/2023</h5>
+                        <p>Bonina</p>
+
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-cat'></i>
+                    <span class="info">
+                        <h4>Mascota</h4>
+                        <h5>4/6/2022</h5>
+                        <p>Lola</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-shield-alt-2'></i>
+                    <span class="info">
+                        <h4>
+                            Denuncias Realizadas
+                        </h4>
+                        <p>01</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-calendar'></i>
+                    <span class="info">
+                        <h4>
+                            Turnos Totales
+                        </h4>
+                        <p>2</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Mascotas en Adopcion</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mascota</th>
+                                <th>Dia</th>
+                                <th>Estado</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/perro01.jpg">
+                                    <p>Pepito</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">En transito</span></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/gato01.jpg">
+                                    <p>Lolo</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/perro02.jpg">
+                                    <p>ducke</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Adoptado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Recordatorios</h3>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <!--  -->
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Vacunación Veterinaria Central</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Castración zoonosis</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Turno Perdido</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="chart">
+                    <h4>Hola</h4>
+                    <canvas id="chart"></canvas>
+                </div>
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+        integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>

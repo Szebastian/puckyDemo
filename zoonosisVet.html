@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Puckypet Dashboard Propietario</title>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <span class="logo-img">
+                <img src="images/puckyLogoSinLetras.png" alt="logo sin letras">
+
+            </span>
+
+            <div class="text head-text">
+                <span class="name"><span></span>Pucky</span>
+                <span class="pet"><span>Pet</span></span>
+            </div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx bxs-dashboard'></i>Resumen</a></li>
+            <li><a href="#"><i class='bx bxs-dog'></i>Mascotas</a></li>
+            <li><a href="#"><i class='bx bx-plus-medical'></i>Veterinaria</a></li>
+            <li><a href="#"><i class='bx bx-calendar'></i>Turno</a></li>
+            <li><a href="#"><i class='bx bx-shield-alt'></i>Denuncia</a></li>
+            <li><a href="#"><i class='bx bx-home-heart'></i>Adopcion</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="./registro.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Cerrar Sesión
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Buscar Veterinaria...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">10</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="images/verena.jpg">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Panel de Control</h1>
+                    <ul class="breadcrumb">
+                        <h2>Hola Verena!</h2>
+                    </ul>
+                </div>
+            </div>
+            <!-- Insights -->
+
+            <ul class="insights">
+                <li>
+                    <i class='bx bxs-dog'></i>
+                    <span class="info">
+                        <h4>Registro de poblacion canina</h4>
+                        <p>Trelew</p>
+                        <h5>20054</h5>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-cat'></i>
+                    <span class="info">
+                        <h4>Mascota</h4>
+                        <h5>4/6/2022</h5>
+                        <p>Lola</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bxs-shield-alt-2'></i>
+                    <span class="info">
+                        <h4>
+                            Cantidad de Denuncias
+                        </h4>
+                        <p>23</p>
+                    </span>
+                </li>
+                <li>
+                    <i class='bx bx-calendar'></i>
+                    <span class="info">
+                        <h4>
+                            Turnos Totales
+                        </h4>
+                        <p>2</p>
+                    </span>
+                </li>
+
+            </ul>
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Turnos programados</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mascota</th>
+                                <th>Dia</th>
+                                <th>Estado</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/perro01.jpg">
+                                    <p>Pepito</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">En transito</span></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/gato01.jpg">
+                                    <p>Lolo</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/perro02.jpg">
+                                    <p>ducke</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Adoptado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Recordatorios</h3>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                    <!--  -->
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Vacunación Veterinaria Central</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Castración zoonosis</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Turno Perdido</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+            <div class="bottom-data">
+                <div class="tasks">
+                    <div class="header">
+                        <i class='bx bx-task'></i>
+                        <h3>Tareas Pendientes</h3>
+                    </div>
+                    <ul class="task-list">
+                        <li>
+                            <input type="checkbox" id="task1">
+                            <label for="task1">Revisar correos electrónicos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task2">
+                            <label for="task2">Preparar informe mensual</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task3">
+                            <label for="task3">Llamar a clientes potenciales</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="task4">
+                            <label for="task4">Actualizar sitio web</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- End of Insights -->
+            <div class="bottom-data">
+                <div class="animal-info">
+                    <div class="header">
+                        <i class='bx bx-info-circle'></i>
+                        <h3>Información sobre Animales</h3>
+                    </div>
+                    <ul class="info-list">
+                        <li>
+                            <span class="label">Cantidad de Denuncias:</span>
+                            <span class="value">8</span>
+                        </li>
+                        <li>
+                            <span class="label">Incidentes (Animales Peligrosos):</span>
+                            <span class="value">-</span>
+                        </li>
+                        <li>
+                            <span class="label">Sanciones:</span>
+                            <span class="value">-</span>
+                        </li>
+                        <li>
+                            <span class="label">Maltrato Animal (Status en Proceso):</span>
+                            <span class="value">-</span>
+                        </li>
+                        <li>
+                            <span class="label">Atenciones Quirúrgicas Animales:</span>
+                            <span class="value">8</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- -->
+
+
+
+        </main>
+
+    </div>
+
+
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
