@@ -1,19 +1,108 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario de registro y registro</title>
-    <link rel="stylesheet" href="./css/styleR.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styleLogin.css" />
+    <title>Formulario de inicio de sesión y registro</title>
 </head>
 
 <body>
-    <main>
-        <div class="<ng-container ></ng-container>">
-            <div class="inner-box">
+    <div class="container">
+        <div class="contenedor-formularios">
+            <div class="ingresar-registrarse">
+                <form action="#" class="formulario-inicio-sesion">
+                    <h2 class="title">Iniciar sesión</h2>
+                    <div class="campo-entrada">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Usuario" />
+                    </div>
+                    <div class="campo-entrada">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Contraseña" />
+                    </div>
+                    <input type="submit" value="Acceso" class="btn solid" />
+                    <p class="social-text">O inicie sesión en plataformas sociales</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+
+                    </div>
+                </form>
+                <form action="#" class="formulario-registro">
+                    <h2 class="title">Regístrate ahora</h2>
+                    <div class="campo-entrada">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Usuario" />
+                    </div>
+                    <div class="campo-entrada">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="campo-entrada">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Contraseña" />
+                    </div>
+                    <input type="submit" class="btn" value="Regístrate" />
+                    <p class="social-text">O inicie sesión en plataformas sociales</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+
+                    </div>
+                </form>
             </div>
         </div>
-    </main>
+
+        <div class="panels-container">
+            <div class="panel panel-izquierdo">
+                <div class="content">
+                    <h3>Nueva aquí?</h3>
+                    <p>
+                        "¡Regístrate hoy mismo y bríndale a tu compañero peludo la atención que se merece!"
+                    </p>
+                    <button class="btn transparent" id="registrarse-btn">
+                        Regístrate
+                    </button>
+                </div>
+                <img src="images/paraLogin.svg" class="image" alt="" />
+            </div>
+            <div class="panel derecho-panel">
+                <div class="content">
+                    <h3>Unete a la communidad</h3>
+                    <p>
+                        Con un solo clic, podrás acceder a la información médica de tu mascota, mantener al día sus
+                        vacunas y programar
+                        recordatorios para sus chequeos regulares.
+                    </p>
+                    <button class="btn transparent" id="iniciar-sesion-btn">
+                        Iniciar sesión
+                    </button>
+                </div>
+
+                <img src="images/inicioPets.svg" class="image" alt="" />
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript/login.js"></script>
 </body>
+
+</html>
